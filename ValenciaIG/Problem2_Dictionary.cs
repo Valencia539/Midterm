@@ -10,16 +10,16 @@ class Problem2_Dictionary
         public int YearLevel;
     }
 
-    static Dictionary<string, Student> ArrayOfStudents = new Dictionary<string, Student>();
+    static Dictionary<string, Student> DictionaryOfStudents = new Dictionary<string, Student>();
     static void AddStudent()
     {   
-        if(ArrayOfStudents.Count>=10){Console.WriteLine("\nThere cannot be more than 10 students!!!");}
+        if(DictionaryOfStudents.Count>=10){Console.WriteLine("\nThere cannot be more than 10 students!!!");}
         else
         {
             
             Console.Write("\nEnter Student Number: ");
             string newStudentNumber = Console.ReadLine();
-            if(ArrayOfStudents.ContainsKey(newStudentNumber))
+            if(DictionaryOfStudents.ContainsKey(newStudentNumber))
             {
                 Console.WriteLine("Student Number Already Exists!!!");
             }
@@ -34,7 +34,7 @@ class Problem2_Dictionary
                 Console.Write("Enter Year Level of Student: ");
                 student.YearLevel = Convert.ToInt32(Console.ReadLine());
         
-                ArrayOfStudents.Add(newStudentNumber, student);
+                DictionaryOfStudents.Add(newStudentNumber, student);
                 Console.WriteLine("\nStudent Added!!!");
             }
         }
@@ -42,10 +42,10 @@ class Problem2_Dictionary
 
     static void DisplayAll()
     {
-        if(ArrayOfStudents.Count==0){Console.WriteLine("\nThere are no students");}
+        if(DictionaryOfStudents.Count==0){Console.WriteLine("\nThere are no students");}
         else
         {
-            foreach(Student student in ArrayOfStudents.Values)
+            foreach(Student student in DictionaryOfStudents.Values)
             {
                 Console.WriteLine($"Student Number: {student.StudentNumber}");
                 Console.WriteLine($"Name: {student.Name}");
@@ -57,17 +57,17 @@ class Problem2_Dictionary
 
     static void SearchStudent()
     {   
-        if(ArrayOfStudents.Count==0){Console.WriteLine("\nThere are no students");}
+        if(DictionaryOfStudents.Count==0){Console.WriteLine("\nThere are no students");}
         else{
             Console.Write("\nEnter Student Number: ");
             string searchFor = Console.ReadLine();
-            if (ArrayOfStudents.ContainsKey(searchFor))
+            if (DictionaryOfStudents.ContainsKey(searchFor))
             {
                 Console.WriteLine("Student Found!!!\n");
-                Console.WriteLine($"Student Number: {ArrayOfStudents[searchFor].StudentNumber}");
-                Console.WriteLine($"Name: {ArrayOfStudents[searchFor].Name}");
-                Console.WriteLine($"Program: {ArrayOfStudents[searchFor].Program}");
-                Console.WriteLine($"Year Level: {ArrayOfStudents[searchFor].YearLevel}");
+                Console.WriteLine($"Student Number: {DictionaryOfStudents[searchFor].StudentNumber}");
+                Console.WriteLine($"Name: {DictionaryOfStudents[searchFor].Name}");
+                Console.WriteLine($"Program: {DictionaryOfStudents[searchFor].Program}");
+                Console.WriteLine($"Year Level: {DictionaryOfStudents[searchFor].YearLevel}");
             }
             else
             {
