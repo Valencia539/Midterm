@@ -96,11 +96,13 @@ class Problem1_Array
             {
                 if (ArrayOfStudents[i].StudentNumber == searchFor)
                 {
-                    ArrayOfStudents[i].StudentNumber="";
-                    ArrayOfStudents[i].Name="";
-                    ArrayOfStudents[i].Program="";
-                    ArrayOfStudents[i].YearLevel=0;
+                    for (int j = i; j < studentCount - 1; j++)
+                    {
+                    ArrayOfStudents[j] = ArrayOfStudents[j + 1];
+                    }
                     studentCount--;
+                    ArrayOfStudents[studentCount] = new Student();
+                    
                     Console.WriteLine("\nStudent Deleted!!!\n");
                     isFound = true;
                     break;
@@ -121,7 +123,7 @@ class Problem1_Array
             Console.Write("\nEnter Student Number: ");
             string searchFor = Console.ReadLine();
             bool isFound = false;
-            for(int i = 0; i<= studentCount; i++)
+            for(int i = 0; i< studentCount; i++)
             {
                 if (ArrayOfStudents[i].StudentNumber==searchFor)
                 {
