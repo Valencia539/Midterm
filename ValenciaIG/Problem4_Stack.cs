@@ -48,8 +48,8 @@ class Problem4_Stack
             Operation operation = new Operation
             {
                 Action = "Added",
-                StudentNumber = ArrayOfStudents[studentCount].StudentNumber,
-                StudentName = ArrayOfStudents[studentCount].Name
+                StudentNumber = student.StudentNumber,
+                StudentName = student.Name
             };
             HistoryOfOperation.Push(operation);
         
@@ -118,12 +118,14 @@ class Problem4_Stack
                         StudentNumber = ArrayOfStudents[i].StudentNumber,
                         StudentName = ArrayOfStudents[i].Name
                     };
-                HistoryOfOperation.Push(operation);
-                    ArrayOfStudents[i].StudentNumber="";
-                    ArrayOfStudents[i].Name="";
-                    ArrayOfStudents[i].Program="";
-                    ArrayOfStudents[i].YearLevel=0;
+                    HistoryOfOperation.Push(operation);
+                    for (int j = i; j < studentCount - 1; j++)
+                    {
+                         ArrayOfStudents[j] = ArrayOfStudents[j + 1];
+                    }
+
                     studentCount--;
+                    ArrayOfStudents[studentCount] = new Student();
                     Console.WriteLine("\nStudent Deleted!!!\n");
                     isFound = true;
                     break;
@@ -144,7 +146,7 @@ class Problem4_Stack
             Console.Write("\nEnter Student Number: ");
             string searchFor = Console.ReadLine();
             bool isFound = false;
-            for(int i = 0; i<= studentCount; i++)
+            for(int i = 0; i< studentCount; i++)
             {
                 if (ArrayOfStudents[i].StudentNumber==searchFor)
                 {
