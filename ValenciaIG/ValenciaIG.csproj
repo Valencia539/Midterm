@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+
+    <Comment>Put in Startup object the name of class you wanna run</Comment>
+    <StartupObject>Problem3_Queue</StartupObject>
+  </PropertyGroup>
+
+</Project>

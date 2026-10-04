@@ -1,0 +1,14 @@
+C:\Users\ACER\Desktop\ValenciaIG\bin\Debug\net10.0\ValenciaIG.exe
+C:\Users\ACER\Desktop\ValenciaIG\bin\Debug\net10.0\ValenciaIG.deps.json
+C:\Users\ACER\Desktop\ValenciaIG\bin\Debug\net10.0\ValenciaIG.runtimeconfig.json
+C:\Users\ACER\Desktop\ValenciaIG\bin\Debug\net10.0\ValenciaIG.dll
+C:\Users\ACER\Desktop\ValenciaIG\bin\Debug\net10.0\ValenciaIG.pdb
+C:\Users\ACER\Desktop\ValenciaIG\obj\Debug\net10.0\ValenciaIG.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ACER\Desktop\ValenciaIG\obj\Debug\net10.0\ValenciaIG.AssemblyInfoInputs.cache
+C:\Users\ACER\Desktop\ValenciaIG\obj\Debug\net10.0\ValenciaIG.AssemblyInfo.cs
+C:\Users\ACER\Desktop\ValenciaIG\obj\Debug\net10.0\ValenciaIG.csproj.CoreCompileInputs.cache
+C:\Users\ACER\Desktop\ValenciaIG\obj\Debug\net10.0\ValenciaIG.dll
+C:\Users\ACER\Desktop\ValenciaIG\obj\Debug\net10.0\refint\ValenciaIG.dll
+C:\Users\ACER\Desktop\ValenciaIG\obj\Debug\net10.0\ValenciaIG.pdb
+C:\Users\ACER\Desktop\ValenciaIG\obj\Debug\net10.0\ValenciaIG.genruntimeconfig.cache
+C:\Users\ACER\Desktop\ValenciaIG\obj\Debug\net10.0\ref\ValenciaIG.dll
