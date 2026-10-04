@@ -4,23 +4,13 @@ using System.Collections.Generic;
 
 class Problem3_Queue
 {
-    struct Student
-{
-    public string StudentNumber;
-    public string Name;
-    public string Program;
-    public int YearLevel;
-}
 
-struct StudentRequest
-{
-    public string StudentNumber;
-    public string StudentName;
-    public string RequestType;
-}
-
-    static Student[] students = new Student[10];
-    static int studentCount = 0;
+    struct StudentRequest
+    {
+        public string StudentNumber;
+        public string StudentName;
+        public string RequestType;
+    }
 
     static Queue<StudentRequest> requestQueue = new Queue<StudentRequest>();
 
